@@ -1,0 +1,50 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.View1">
+    
+    <Page id="page" title="Exercise 1">
+    <content>
+        <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form2" backgroundDesign="Transparent">
+            <sap.ui.layout.form:content>
+                <Label text="Name" id="label1"/>
+                <HBox id="Hbox0">
+                <Input width="600px" id="input_name"/>
+                </HBox>
+
+                <Label text="Street/No" id="label2"/>
+                <HBox id="Hbox1">
+                <Input width="385px" id="input_street"/>
+                <Label width="10px" id="space1"/> 
+                <Input width="205px" id="input_no"/>
+                </HBox>
+                
+                <Label text="ZIP Code/City" id="label3"/>
+                <HBox id="Hbox2">
+                    <Input width="205px" id="input_zip"/>
+                    <Label width="10px" id="space2"/> 
+                    <Input width="385px" id="input_city"/>
+                </HBox>
+
+                <Label text="Country" id="label4"/>
+                <ComboBox xmlns="sap.m" id="box1" width="600px">
+                    <items>                        
+                        <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="England" id="item1"/>
+                        <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Germany" id="item2"/>
+                        <core:Item xmlns:core="sap.ui.core" key="item-3-key" text="USA" id="item3"/>
+                        <core:Item xmlns:core="sap.ui.core" key="item-4-key" text="Philippines" id="item4"/>
+                    </items>
+                </ComboBox>
+
+                <Label width="10px" id="space3"/>
+                <HBox id="Hbox3">
+                <Label width="800px" id="space4"/>
+                <Button width="50px" xmlns="sap.m" text="Save" id="button_save" type="Accept"/>
+                <Label width="10px" id="space5"/> 
+                <Button width="55px" xmlns="sap.m" text="Clear" id="button_clear" press="onClear" type="Reject"/>
+                </HBox>
+                
+
+            </sap.ui.layout.form:content>
+        </sap.ui.layout.form:SimpleForm>
+
+    </content>
+    </Page>
+</mvc:View>
