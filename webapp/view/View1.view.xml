@@ -40,7 +40,6 @@
                 <Label width="10px" id="space5"/> 
                 <Button width="55px" xmlns="sap.m" text="Clear" id="button_clear" press="onClear" type="Reject"/>
                 </HBox>
-                
 
             </sap.ui.layout.form:content>
         </sap.ui.layout.form:SimpleForm>
